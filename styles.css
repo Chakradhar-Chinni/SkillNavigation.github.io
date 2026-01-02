@@ -1,0 +1,93 @@
+:root {
+  --color-csharp: #0077c8;
+  --color-dotnet: #512bd4;
+  --color-database: #28a745;
+  --color-sql: #fd7e14;
+}
+
+body {
+  background: #f8f9fa;
+}
+
+.url-box {
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.url-box.highlight {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+  animation: highlight-pulse 0.6s ease;
+}
+
+@keyframes highlight-pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+  }
+}
+
+.subtopic {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subtopic:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.side-nav {
+  background: #ffffff;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  min-width: 200px;
+  position: relative;
+}
+
+.side-nav.hidden {
+  display: none;
+}
+
+.resizable-sidebar {
+  resize: horizontal;
+  overflow: hidden;
+}
+
+.resize-handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #dee2e6;
+  cursor: col-resize;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.resizable-sidebar:hover .resize-handle {
+  opacity: 1;
+}
+
+.badge {
+  font-size: 0.7rem;
+}
+
+/* Topic colors */
+.card-header {
+  /* background-color: cyan; */
+  color: black;
+  border-left: 5px solid #28a745;
+}
+
+/* Subtopic colors */
+.subtopic {
+  border-left: 4px solid #e74c3c;
+}

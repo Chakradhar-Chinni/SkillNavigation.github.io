@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "name": "Backend",
+      "subCategories": [
+        { "label": "C#", "topic": "C#" },
+        { "label": ".NET Core", "topic": ".NET Core" }
+      ]
+    },
+    {
+      "name": "Database",
+      "subCategories": [
+        { "label": "SQL", "topic": "SQL" }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "C#",
+      "subTopics": [
+        {
+          "title": "LINQ",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/linq/",
+          "tags": ["csharp", "collections", "query"]
+        },
+        {
+          "title": "Async Await",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/",
+          "tags": ["async", "threading"]
+        }
+      ]
+    },
+    {
+      "name": ".NET Core",
+      "subTopics": [
+        {
+          "title": "Middleware",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/",
+          "tags": ["webapi", "pipeline"]
+        }
+      ]
+    },
+    {
+      "name": "SQL",
+      "subTopics": [
+        {
+          "title": "Indexes",
+          "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/",
+          "tags": ["sql", "performance"]
+        }
+      ]
+    }
+  ]
+}

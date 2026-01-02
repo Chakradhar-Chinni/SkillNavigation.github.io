@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skill Navigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-white shadow-sm px-3">
+  <div class="d-flex align-items-center gap-2">
+    <button class="btn btn-outline-secondary btn-sm" id="toggleSidebar" onclick="toggleSidebar()" title="Toggle Sidebar">☰</button>
+    <span class="navbar-brand fw-bold mb-0">Skill Navigation</span>
+  </div>
+
+  <div class="d-flex align-items-center gap-2">
+    <input id="urlBox" class="form-control url-box" type="text" placeholder="#url" readonly />
+    <button class="btn btn-outline-secondary btn-sm" onclick="copyUrl()">Copy</button>
+    <button class="btn btn-outline-primary btn-sm" onclick="openUrl()">Open</button>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Side Navigation -->
+    <aside class="col-3 border-end p-3 side-nav resizable-sidebar" id="sidebarContainer">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <strong>Categories</strong>
+        <div>
+          <button class="btn btn-sm btn-outline-secondary" onclick="toggleAll(true)">Select All</button>
+          <button class="btn btn-sm btn-outline-secondary" onclick="toggleAll(false)">Remove All</button>
+        </div>
+      </div>
+
+      <div id="sideNav"></div>
+      <div class="resize-handle" id="resizeHandle"></div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="col-9 p-4">
+      <input
+        id="searchBox"
+        class="form-control mb-3"
+        placeholder="Search by title or tag..."
+        oninput="applySearch()" />
+
+      <div id="topics"></div>
+    </main>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
