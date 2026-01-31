@@ -1,3 +1,16 @@
+// Get the base path for GitHub Pages or local
+const getBasePath = () => {
+    const pathname = window.location.pathname;
+    const isDev = pathname === '/' || pathname === '/index.html';
+    if (isDev) return ''; // Local development
+    
+    // Extract base path for GitHub Pages
+    const parts = pathname.split('/').filter(Boolean);
+    return parts.length > 0 && parts[parts.length - 1] !== 'index.html' 
+        ? '/' + parts[0] 
+        : '';
+};
+
 // Global state
 let data = null;
 let currentCategory = 'all';
@@ -6,7 +19,8 @@ let searchQuery = '';
 // Initialize app
 async function init() {
     try {
-        const response = await fetch('data.json');
+        const basePath = getBasePath();
+        const response = await fetch(`${basePath}/data.json`);
         data = await response.json();
         
         // Set sidebar open by default
