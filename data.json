@@ -2,51 +2,335 @@
   "categories": [
     {
       "name": "Backend",
+      "notes": "notes section",
       "subCategories": [
-        { "label": "C#", "topic": "C#" },
-        { "label": ".NET Core", "topic": ".NET Core" }
+        { "label": "C#", "topic": "C#", "notes": "" },
+        { "label": ".NET Core", "topic": ".NET Core", "notes": "" }
       ]
     },
     {
       "name": "Database",
+      "notes": "notes section",
       "subCategories": [
-        { "label": "SQL", "topic": "SQL" }
+        { "label": "SQL", "topic": "SQL", "notes": "" }
       ]
     }
   ],
+
+
   "topics": [
     {
       "name": "C#",
+      "notes": "notes section",
       "subTopics": [
         {
-          "title": "LINQ",
-          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/linq/",
-          "tags": ["csharp", "collections", "query"]
+          "title": "Fundamentals",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/LINQ%20-%20Language%20Integrated%20Query",
+          "notes": "",
+          "tags": [
+            { "label": "data types", "url": "" },
+            { "label": "var", "url": "" },
+            { "label": "string concat", "url": "" },
+            { "label": "Interpolation", "url": "" },
+            { "label": "methods", "url": "" },
+            { "label": "switch case", "url": "" }
+          ]
         },
         {
-          "title": "Async Await",
+          "title": "OOPS",
+          "url": "",
+          "notes": "",
+          "tags": [
+            { "label": "todo", "url": "" }
+          ]
+        },
+        {
+          "title": "Collections",
+          "url": "",
+          "notes": "",
+          "tags": [
+            { "label": "todo", "url": "" },
+            { "label": "arrays", "url": "" },
+            { "label": "lists", "url": "" },
+            { "label": "dictionaries", "url": "" },
+            { "label": "hashsets", "url": "" },
+            { "label": "queues", "url": "" },
+            { "label": "stacks", "url": "" },
+            { "label": "hashtable", "url": "" }
+          ]
+        },
+        {
+          "title": "LINQ",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/LINQ%20-%20Language%20Integrated%20Query",
+          "notes": "",
+          "tags": [
+            { "label": "query syntax", "url": "" },
+            { "label": "method syntax", "url": "" }
+          ]
+        },
+        {
+          "title": "Asynchronous Programming",
           "url": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/",
-          "tags": ["async", "threading"]
+          "notes": "",
+          "tags": [
+            { "label": "async", "url": "" },
+            { "label": "threading", "url": "" }
+          ]
+        },
+        {
+          "title": "Multi threading",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/dot%20net%20core/Multi%20Threading",
+          "notes": "",
+          "tags": [
+            { "label": "Threads", "url": "" },
+            { "label": "Task Parallel Library -TPL", "url": "" },
+            { "label": "Synchronization and Resource Management", "url": "" }
+          ]
         }
       ]
     },
     {
       "name": ".NET Core",
+      "notes": "",
       "subTopics": [
         {
+          "title": "Web API Tutorial from Scratch",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/Web%20API",
+          "notes": "",
+          "tags": [
+            { "label": "API CRUD", "url": "" },
+            { "label": "Services and Dependency Injection - DI", "url": "" },
+            { "label": "EF", "url": "" },
+            { "label": "Filtering, Sorting, Pagination", "url": "" },
+            { "label": "Versioning, Documenting", "url": "" },
+            { "label": "Testing , Deployment", "url": "" }
+          ]
+        },
+        {
+          "title": "Entity Framework Core - ORM",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/Entity%20Framework%20Core",
+          "notes": "",
+          "tags": [
+            { "label": "ef core", "url": "" },
+            { "label": "eager loading", "url": "" },
+            { "label": "lazy loading", "url": "" },
+            { "label": "explicit loading", "url": "" },
+            { "label": "setup ef core from scratch", "url": "" },
+            { "label": "linq with ef core", "url": "" }
+          ]
+        },
+        {
+          "title": "Caching",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/dot%20net%20core/Caching",
+          "notes": "",
+          "tags": [
+            { "label": "Client side caching", "url": "" },
+            { "label": "server side caching", "url": "" },
+            { "label": "todo: distributed caching", "url": "" }
+          ]
+        },
+        {
+          "title": "Dependency Injection",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/dot%20net%20core/Dependency%20Injection",
+          "notes": "",
+          "tags": [
+            { "label": "Singleton", "url": "https://chakradhar-chinni.github.io/SkillNavigation.github.io/" },
+            { "label": "Scoped", "url": "" },
+            { "label": "Transient", "url": "" }
+          ]
+        },
+        {
           "title": "Middleware",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/",
-          "tags": ["webapi", "pipeline"]
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/dot%20net%20core/Middleware",
+          "notes": "",
+          "tags": [
+            { "label": "built in middleware", "url": "" },
+            { "label": "custom middleware", "url": "" },
+            { "label": "http request pipeline", "url": "" },
+            { "label": "delegate 101", "url": "" }
+          ]
+        },
+        {
+          "title": "MVC App(razor pages) Tutorial from Scratch",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/MVC%20aspnetcore",
+          "notes": "",
+          "tags": [
+            { "label": "mvc app from scratch", "url": "" },
+            { "label": "/views", "url": "" },
+            { "label": "ef with mvc", "url": "" },
+            { "label": "routing and navigation", "url": "" }
+          ]
+        },
+        {
+          "title": "Design Patterns",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/Unit%20Testing/xUnit.net",
+          "notes": "",
+          "tags": [
+            { "label": "AAA pattern - Arrange,Act,Assert", "url": "" },
+            { "label": "todo: Moq", "url": "" }
+          ]
+        },
+        {
+          "title": "xUnit Testing",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/Unit%20Testing/xUnit.net",
+          "notes": "",
+          "tags": [
+            { "label": "AAA pattern - Arrange,Act,Assert", "url": "" },
+            { "label": "todo: Moq", "url": "" }
+          ]
         }
       ]
     },
     {
       "name": "SQL",
+      "notes": "",
       "subTopics": [
         {
           "title": "Indexes",
           "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/",
-          "tags": ["sql", "performance"]
+          "notes": "",
+          "tags": [
+            { "label": "sql", "url": "" },
+            { "label": "performance", "url": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Authentication using .NET Core",
+      "notes": "",
+      "subTopics": [
+        {
+          "title": "JWT Authentication - REST API",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/tree/main/aspnetcore/Authentication/JWT%20Authentication",
+          "notes": "",
+          "tags": [
+            { "label": "jwt token", "url": "" }
+          ]
+        },
+        {
+          "title": "JWT Authentication - MVC App(Razor Pages)",
+          "url": "placeholder",
+          "notes": "",
+          "tags": [
+            { "label": "ToDo", "url": "" }
+          ]
+        },
+        {
+          "title": "JWT Authentication - Angular App",
+          "url": "placeholder",
+          "notes": "",
+          "tags": [
+            { "label": "ToDo", "url": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hosting .Net Core Apps",
+      "notes": "",
+      "subTopics": [
+        {
+          "title": "IIS Hosting",
+          "url": "https://github.com/Chakradhar-Chinni/Tech-Library/blob/main/aspnetcore/Hosting%20.NET%20Apps/IIS%20Hosting.cs",
+          "notes": "",
+          "tags": [
+            { "label": "windows hosting", "url": "" }
+          ]
+        },
+        {
+          "title": "Azure Hosting",
+          "url": "",
+          "notes": "",
+          "tags": [
+            { "label": "to do", "url": "" }
+          ]
+        },
+        {
+          "title": "AWS Hosting",
+          "url": "",
+          "notes": "",
+          "tags": [
+            { "label": "to do", "url": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Patterns",
+      "notes": "",
+      "subTopics": [
+        {
+          "title": "Architecture Patterns",
+          "url": "placeholder",
+          "notes": "",
+          "tags": [
+            { "label": "MVC", "url": "" },
+            { "label": "Layered", "url": "" },
+            { "label": "Clean", "url": "" },
+            { "label": "Repository", "url": "" },
+            { "label": "Hexagonal", "url": "" },
+            { "label": "Onion", "url": "" }
+          ]
+        },
+        {
+          "title": "Creational Patterns",
+          "url": "placeholder",
+          "notes": "",
+          "tags": [
+            { "label": "Singleton", "url": "" },
+            { "label": "Factory", "url": "" },
+            { "label": "Builder", "url": "" }
+          ]
+        },
+        {
+          "title": "Structural Patterns",
+          "url": "placeholder",
+          "notes": "",
+          "tags": [
+            { "label": "Decorator", "url": "" },
+            { "label": "Adapter", "url": "" },
+            { "label": "Facade", "url": "" },
+            { "label": "Proxy", "url": "" }
+          ]
+        },
+        {
+          "title": "Behavioral Patterns",
+          "url": "placeholder",
+          "notes": "",
+          "tags": [
+            { "label": "Strategy", "url": "" },
+            { "label": "Observer", "url": "" },
+            { "label": "Command", "url": "" }
+          ]
+        }
+
+      ]
+    },
+    {
+      "name": "Blog Site",
+      "notes": "",
+      "subTopics": [
+        {
+          "title": "Hashnode",
+          "url": "https://cc-tech-bytes.hashnode.dev/scaling-101-understanding-horizontal-and-vertical-scaling",
+          "notes": "",
+          "tags": [ ]
+        }
+      ]
+    },
+    {
+      "name": "NAME_Place_Holder_READ_ONLY",
+      "notes": "",
+      "subTopics": [
+        {
+          "title": "Place Holder",
+          "url": "placeholder",
+          "notes": "",
+          "tags": [
+            { "label": "placeholder1", "url": "" },
+            { "label": "placeholder2", "url": "" }
+          ]
         }
       ]
     }
